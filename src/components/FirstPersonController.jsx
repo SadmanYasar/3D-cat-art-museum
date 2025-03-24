@@ -23,14 +23,15 @@ export function FirstPersonController() {
                 turnVelMultiplier={1} // Turning speed same as moving speed
                 turnSpeed={100} // give it big turning speed to prevent turning wait time
                 mode="CameraBasedMovement"
-                floatHeight={1}
+                floatHeight={0.2}
+                autoBalance={false}
                 // onPositionChange={(position) => {
                 //     if (position.y < -5) {
                 //         resetPosition()
                 //     }
                 // }}
             >
-                <mesh castShadow visible={false} position={[2, 5, 2]}>
+                <mesh castShadow visible={false} position={[2, 1, 2]}>
                     <capsuleGeometry args={[0.3, 1]} />
                     <meshStandardMaterial color="blue" />
                 </mesh>

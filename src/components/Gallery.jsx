@@ -27,7 +27,7 @@ export function Gallery() {
       <RigidBody type="fixed" position={[0, 2, -10]}>
         <mesh receiveShadow>
           <boxGeometry args={[20, 4, 0.2]} />
-          <meshStandardMaterial 
+          <meshStandardMaterial
             color="#ffffff"
             roughness={0.3}
           />
@@ -38,7 +38,7 @@ export function Gallery() {
       <RigidBody type="fixed" position={[-10, 2, 0]}>
         <mesh receiveShadow>
           <boxGeometry args={[0.2, 4, 20]} />
-          <meshStandardMaterial 
+          <meshStandardMaterial
             color="#ffffff"
             roughness={0.3}
           />
@@ -49,7 +49,7 @@ export function Gallery() {
       <RigidBody type="fixed" position={[10, 2, 0]}>
         <mesh receiveShadow>
           <boxGeometry args={[0.2, 4, 20]} />
-          <meshStandardMaterial 
+          <meshStandardMaterial
             color="#ffffff"
             roughness={0.3}
           />
@@ -60,7 +60,7 @@ export function Gallery() {
       <RigidBody type="fixed" position={[0, 2, 10]}>
         <mesh receiveShadow>
           <boxGeometry args={[20, 4, 0.2]} />
-          <meshStandardMaterial 
+          <meshStandardMaterial
             color="#ffffff"
             roughness={0.3}
           />
@@ -106,7 +106,7 @@ export function Gallery() {
       />
 
       <mesh position={[0, 4, 0]} receiveShadow>
-        <boxGeometry args={[20, 0,2, 20]} />
+        <boxGeometry args={[20, 0, 2, 20]} />
         <meshStandardMaterial color="#000000" />
       </mesh>
 

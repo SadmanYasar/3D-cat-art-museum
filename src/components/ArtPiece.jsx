@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import { useLoader } from '@react-three/fiber'
 import { TextureLoader } from 'three'
-import { RigidBody } from '@react-three/rapier'
 import { Html } from '@react-three/drei'
 
 export function ArtPiece({ position, rotation, url }) {
@@ -10,10 +9,10 @@ export function ArtPiece({ position, rotation, url }) {
   const [isSelected, setIsSelected] = useState(false)
 
   return (
-    <RigidBody type="fixed" position={position} rotation={rotation}>
       <mesh
         ref={meshRef}
         onClick={() => setIsSelected(!isSelected)}
+        position={position} rotation={rotation}
       >
         <planeGeometry args={[2, 3]} />
         <meshStandardMaterial map={texture} />
@@ -32,6 +31,5 @@ export function ArtPiece({ position, rotation, url }) {
           </Html>
         )}
       </mesh>
-    </RigidBody>
   )
 }
