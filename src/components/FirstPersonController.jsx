@@ -1,5 +1,3 @@
-import { useEffect, useRef } from 'react'
-import { useThree } from '@react-three/fiber'
 import Ecctrl from 'ecctrl'
 import { KeyboardControls } from '@react-three/drei'
 
@@ -12,7 +10,7 @@ const keyboardMap = [
     { name: "run", keys: ["Shift"] }
 ]
 
-export function FirstPersonController({ speed = 5 }) {
+export function FirstPersonController() {
 
     return (
         <KeyboardControls map={keyboardMap}>

@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
-import { useThree, useLoader } from '@react-three/fiber'
+import { useRef, useState } from 'react'
+import { useLoader } from '@react-three/fiber'
 import { TextureLoader } from 'three'
 import { RigidBody } from '@react-three/rapier'
 import { Html } from '@react-three/drei'
 
-export function ArtPiece({ position, rotation, url, id }) {
+export function ArtPiece({ position, rotation, url }) {
   const texture = useLoader(TextureLoader, url)
   const meshRef = useRef()
   const [isSelected, setIsSelected] = useState(false)
@@ -25,7 +25,7 @@ export function ArtPiece({ position, rotation, url, id }) {
               userSelect: 'none'
             }}
           >
-            <div className="bg-black/80 text-white p-4 rounded-lg">
+            <div className="p-4 text-white rounded-lg bg-black/80">
               <h2 className="text-xl font-bold">Artwork Title</h2>
               <p className="mt-2">Description of the artwork goes here.</p>
             </div>

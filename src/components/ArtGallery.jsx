@@ -1,20 +1,13 @@
-import { Suspense, useState, useRef } from 'react'
+import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Physics } from '@react-three/rapier'
 import {
-    Environment,
-    PerspectiveCamera,
-    Sky,
-    Stars,
-    OrbitControls,
-    KeyboardControls,
     Stats
 } from '@react-three/drei'
 import { FirstPersonController } from './FirstPersonController'
 import { LoadingScreen } from './LoadingScreen'
 import { ArtPiece } from './ArtPiece'
 import { Gallery } from './Gallery'
-import { TouchControls } from './TouchControls'
 import art2 from '../assets/art2.jpg'
 import art3 from '../assets/art3.jpg'
 import art4 from '../assets/art4.jpg'
@@ -51,11 +44,9 @@ const artworks = [
 ]
 
 export function ArtGallery() {
-    const [selectedArt, setSelectedArt] = useState(null)
-    const prevCameraPosition = useRef(null)
 
     return (
-        <div className="fixed inset-0 w-screen h-screen overflow-hidden">
+        <div className="overflow-hidden fixed inset-0 w-screen h-screen">
             <Suspense fallback={<LoadingScreen />}>
                 <Canvas
                     shadows
