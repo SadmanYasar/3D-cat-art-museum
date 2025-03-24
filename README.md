@@ -1,4 +1,4 @@
-# 🐱 3D Cat Art Gallery 🐱
+# 🐱 3D Cat Art Museum 🐱
 
 ### Vibe coded with Trae and Claude 3.7-Sonnet
 
