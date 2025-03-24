@@ -14,7 +14,7 @@ export function Gallery() {
       {/* Floor with marble texture */}
       <RigidBody type="fixed" position={[0, 0, 0]}>
         <mesh receiveShadow>
-          <boxGeometry args={[20, 0.2, 20]} />
+          <boxGeometry args={[20, -1, 20]} scale={[1, 5, 1]} />
           <meshStandardMaterial
             map={marbleTexture}
             roughness={0.2}

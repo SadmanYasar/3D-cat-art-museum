@@ -58,7 +58,7 @@ export function ArtGallery() {
                     {/* <pointLight position={[10, 10, 10]} intensity={2} castShadow /> */}
                     {/* <directionalLight position={[0, 10, 0]} intensity={1.5} castShadow /> */}
                     {/* <Environment background preset="sunset" /> */}
-                    <Physics timeStep="vary">
+                    <Physics timeStep="vary"> 
                         <FirstPersonController />
                         <Gallery />
                         {artworks.map((art) => (
