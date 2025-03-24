@@ -7,3 +7,4 @@
 - React + Vite - Frontend framework and build tool
 - React Three Fiber - React renderer for Three.js
 - Tailwind CSS - Styling and UI components
+- Ecctrl - Character control
